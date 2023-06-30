@@ -9,29 +9,34 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/home.css" />
   </head>
   <body>
     <div class="wrap">
       <!-- 헤더 -->
-      <div class="header">
-        <div class="logo"></div>
-        <div class="search">
-          <div class="select">
-            <span>전체</span>
-            <i class="xi-caret-down-min"></i>
+      <div class="container">
+        <div class="header">
+          <div class="logo"></div>
+          <div class="search">
+            <div class="select">
+              <span>전체</span>
+              <i class="xi-caret-down-min"></i>
+            </div>
+            <div class="input">
+              <input type="text" placeholder="검색어를 입력하세요" />
+              <i class="xi-search"></i>
+            </div>
+            <div class="button">상세검색</div>
           </div>
-          <div class="input">
-            <input type="text" placeholder="검색어를 입력하세요" />
-          </div>
-          <div class="button">상세검색</div>
         </div>
       </div>
       <!-- 히어로 -->
       <div class="hero">
         <ul class="menu">
-          <li>메인 페이지</li>
-          <li>기관별보기</li>
-          <li>열린마당</li>
+          <li><a href="./home.html">메인 페이지</a></li>
+          <li><a href="./ajency.html">기관별보기</a></li>
+          <li><a href="./QnA.html">열린마당</a></li>
         </ul>
         <div class="BG"></div>
       </div>
@@ -39,13 +44,14 @@
         <!-- 컬렉션 -->
         <div class="collection context">
           <div class="title">
+            <div class="bar"><img src="../images/mainTitBg.png" alt="" /></div>
             <h1>컬렉션</h1>
             <p>collection</p>
           </div>
           <div class="plus">더보기</div>
           <div class="items">
             <div class="item">
-              <div class="thumbnail"></div>
+              <div class="thumbnail image01"></div>
               <div class="textarea">
                 <div class="Stitle">OA(Open Access) 온라인 …</div>
                 <div class="desc">
@@ -57,7 +63,7 @@
               </div>
             </div>
             <div class="item">
-              <div class="thumbnail"></div>
+              <div class="thumbnail image02"></div>
               <div class="textarea">
                 <div class="Stitle">코로나바이러스 감염증(CO …</div>
                 <div class="desc">
@@ -68,7 +74,7 @@
               </div>
             </div>
             <div class="item">
-              <div class="thumbnail"></div>
+              <div class="thumbnail image03"></div>
               <div class="textarea">
                 <div class="Stitle">디지털 컬렉션</div>
                 <div class="desc">
@@ -80,7 +86,7 @@
               </div>
             </div>
             <div class="item">
-              <div class="thumbnail"></div>
+              <div class="thumbnail image04"></div>
               <div class="textarea">
                 <div class="Stitle">귀중본/고서 전자책</div>
                 <div class="desc">
@@ -95,6 +101,7 @@
         <!-- 인기태그 -->
         <div class="trendingTag context">
           <div class="title">
+            <div class="bar"><img src="../images/mainTitBg.png" alt="" /></div>
             <h1>인기태그</h1>
             <p>trending tag</p>
           </div>
@@ -188,6 +195,7 @@
         <!-- 서평 -->
         <div class="bookReview context">
           <div class="title">
+            <div class="bar"><img src="../images/mainTitBg.png" alt="" /></div>
             <h1>서평</h1>
             <p>Book Review</p>
           </div>
@@ -310,6 +318,7 @@
         <!-- 사용자 목록 -->
         <div class="Ucollection context">
           <div class="title">
+            <div class="bar"><img src="../images/mainTitBg.png" alt="" /></div>
             <h1>사용자 목록</h1>
             <p>User's collection</p>
           </div>

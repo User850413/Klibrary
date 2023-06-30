@@ -1,0 +1,233 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 170px;
+}
+.header .logo {
+  height: 60px;
+  width: 284px;
+  background-image: url("../images/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .search {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 5px;
+}
+.header .search .select {
+  cursor: pointer;
+  width: 183px;
+  height: 63px;
+  text-align: center;
+  line-height: 63px;
+  position: relative;
+}
+.header .search .select i {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+}
+.header .search .select::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #171d33;
+}
+.header .search .input {
+  width: 750px;
+  height: 63px;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  line-height: 63px;
+  padding: 0 10px 0 35px;
+  position: relative;
+}
+.header .search .input input {
+  width: 100%;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
+.header .search .input i {
+  font-size: 31px;
+  cursor: pointer;
+}
+.header .search .input::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #171d33;
+}
+.header .search .button {
+  cursor: pointer;
+  width: 108px;
+  height: 63px;
+  color: #fff;
+  background-color: #171d33;
+  font-size: 16px;
+  text-align: center;
+  line-height: 63px;
+}
+.hero {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.hero .menu {
+  width: 100%;
+  background-color: #171d33;
+  justify-content: center;
+  display: flex;
+}
+.hero .menu li a {
+  display: block;
+  padding: 30px 100px;
+  color: #fff;
+  font-size: 20px;
+}
+.hero .BG {
+  width: 100%;
+  height: 390px;
+  background-image: url("../images/hero01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.context {
+  margin-bottom: 80px;
+}
+.context > .title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.context > .title > h1 {
+  font-weight: 400;
+  font-size: 30px;
+}
+.context > .title > p {
+  font-size: 16px;
+}
+.context > .plus {
+  display: block;
+  width: max-content;
+  margin: 0 0 15px auto;
+  padding-bottom: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+}
+.context > .plus::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+}
+.collection .items {
+  display: flex;
+  gap: 20px;
+}
+.collection .items .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.collection .items .item .thumbnail {
+  width: 100%;
+  height: 248px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collection .items .item .image01 {
+  background-image: url("../images/collection01.jpg");
+}
+.collection .items .item .image02 {
+  background-image: url("../images/collection02.png");
+}
+.collection .items .item .image03 {
+  background-image: url("../images/collection03.jpg");
+}
+.collection .items .item .image04 {
+  background-image: url("../images/collection04.jpg");
+}
+.collection .items .item .textarea {
+  width: 100%;
+  height: 206px;
+  background: #f4f4f4;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #cbcbcb;
+  padding: 30px 15px;
+}
+.collection .items .item .textarea .Stitle {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.collection .items .item .textarea .desc {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 23px;
+}
+.collection .items .item .textarea .more {
+  font-size: 14px;
+  text-align: center;
+}
+.trendingTag .tags {
+  display: flex;
+  height: 370px;
+}
+.trendingTag .tags .Top10 {
+  width: 300px;
+  background-color: #353535;
+  padding: 25px 25px 0;
+  color: #fff;
+}
+.trendingTag .tags .Top10 .Ttitle {
+  font-size: 18px;
+  padding-bottom: 12px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+.trendingTag .tags .Top10 .Tranking {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.trendingTag .tags .Top10 .Tranking li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+.trendingTag .tags .Top10 .Tranking li span {
+  width: 19px;
+  text-align: center;
+  font-weight: 600;
+}
+.trendingTag .tags .Top10 .Tranking li p {
+  font-size: 16px;
+}
+.trendingTag .tags .Tlist {
+  flex: 1;
+  background-color: #ebebeb;
+}

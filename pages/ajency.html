@@ -4,10 +4,201 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>K-library</title>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
   </head>
   <body>
     <div class="wrap">
       <!-- 헤더 -->
+      <div class="gnb_header">
+        <div class="menu">
+          <div class="logo"></div>
+          <ul class="gnb">
+            <li>메인 페이지</li>
+            <li>기관별보기</li>
+            <li>열린마당</li>
+          </ul>
+        </div>
+        <div class="head">
+          <h1>기관별보기</h1>
+          <p>
+            국가전자도서관 참여기관을 선택하여 기관별로 자료를 검색할 수
+            있습니다.
+          </p>
+        </div>
+        <i class="xi-search"></i>
+      </div>
+      <!-- 내용 -->
+      <div class="container">
+        <div class="date"><p>(2023-06-26 기준)</p></div>
+        <div class="agencies">
+          <div class="agency">
+            <div class="section1">
+              <div class="name">국립중앙도서관</div>
+              <div class="count">
+                <span>45,097,580</span>
+                <p>건</p>
+              </div>
+            </div>
+            <div class="section2">
+              <p>
+                국립중앙도서관은 국가 지식정보자원의 보고로서 1945년 개관한
+                이래, 국내에서 발행된 출판물과 각종 지식 정보를 망라적으로 수집
+                · 보존하고 이를 체계적으로 정리하여 국민에게 제공하고 있습니다.
+                또한 변화하는 시대에 맞춰 종이매체에서 온라인 자료에 이르기까지
+                풍부한 장서를 구축하고...
+              </p>
+            </div>
+          </div>
+          <div class="agency">
+            <div class="section1">
+              <div class="name">국방대학교 국방전자도서관</div>
+              <div class="count">
+                <span>219,190</span>
+                <p>건</p>
+              </div>
+            </div>
+            <div class="section2">
+              <p>
+                국방전자도서관(NDDL)은 국방대학교를 중심으로 국방부 산하 72개
+                전자도서관의 학술 및 지식정보를 수집 하고 관리, 운영하는
+                안보.국방분야 대표도서관 역할을 수행하고 있습니다. 주요자료로
+                단행자료, 연속간행물, 학위논문 등...
+              </p>
+            </div>
+          </div>
+          <div class="agency">
+            <div class="section1">
+              <div class="name">국회도서관</div>
+              <div class="count">
+                <span>45,097,580</span>
+                <p>건</p>
+              </div>
+            </div>
+            <div class="section2">
+              <p>
+                국회도서관 국회도서관은 세계의 지식정보를 수집하여 국회와
+                국민에게 제공함으로써 의회민주주의 발전과 국민의 삶의 질 향상에
+                기여하고, 인류의 지적문화유산을 보존하여 후세에 전승하는
+                기관입니다...
+              </p>
+            </div>
+          </div>
+          <div class="agency">
+            <div class="section1">
+              <div class="name">농촌진흥청 농업과학도서관</div>
+              <div class="count">
+                <span>25,738</span>
+                <p>건</p>
+              </div>
+            </div>
+            <div class="section2">
+              <p>
+                농촌진흥청 농업과학도서관 농업과 농촌은 식량을 생산하는 기능에
+                그치지 않고 환경보전과 휴식공간 제공 등 다양한 공익적 기능을
+                수행하고 있습니다. 농촌진흥청은 이러한 다원적 기능이 농가소득
+                향상 및 농촌생활의 쾌적성과 직결되도록 기술력으로 뒷받침해
+                나가고 있습니다. 앞으로 농촌진흥청은 농업인이 현장에서...
+              </p>
+            </div>
+          </div>
+          <div class="agency">
+            <div class="section1">
+              <div class="name">법원도서관</div>
+              <div class="count">
+                <span>436,628</span>
+                <p>건</p>
+              </div>
+            </div>
+            <div class="section2">
+              <p>
+                법원도서관 법원도서관은 재판사무를 지원하고 국민들에게
+                법률정보를 제공하는 국가법률전문도서관으로 법 원내부 및 외부에서
+                간행되는 판례, 법령, 법률문헌 등 다양한 법률정보를 수집·가공하여
+                제공하고 있습니다. 제공 내용은 2021. 6. 30. 현재 법률도서
+                391,420권, 일반도서 77,858권 이외의 판례, 법령, 대법원 규칙...
+              </p>
+            </div>
+          </div>
+          <div class="agency">
+            <div class="section1">
+              <div class="name">질병관리청 국립의과학지식센터</div>
+              <div class="count">
+                <span>1,183,160</span>
+                <p>건</p>
+              </div>
+            </div>
+            <div class="section2">
+              <p>
+                국립의과학지식센터는의과학분야 전문 학술정보의 공유기반 구축을
+                통해 의과학지식정보의 생산과 확산을 지원함으로써 근거 중심의
+                의과학 연구를 활성화하고, 보건의료정보에 대한 접근성을
+                확대함으로써 국민 건 강증진에
+                기여합니다.국가의학전문도서관으로서 국내외 의과학 학술자원에
+                대해 온오프라인 서비스를...
+              </p>
+            </div>
+          </div>
+          <div class="agency">
+            <div class="section1">
+              <div class="name">한국과학기술원 도서관</div>
+              <div class="count">
+                <span>992,626</span>
+                <p>건</p>
+              </div>
+            </div>
+            <div class="section2">
+              <p>
+                한국과학기술원 도서관 한국과학기술원 도서관은 1971년 서울
+                홍릉에서 한국과학원(KAIS) 도서실로 출발 하여, 1990년 KAIST가
+                대전 캠퍼스로 이전하면서 신축한 과학도서관을 거쳐 2018년 3월
+                현재의 학술문화관으 로 개관하였습니다. 한국과학기술원 도서관은
+                학술문화관과 교양분관, 문지도서관, 경영대학도서관 총...
+              </p>
+            </div>
+          </div>
+          <div class="agency">
+            <div class="section1">
+              <div class="name">한국과학기술정보연구원</div>
+              <div class="count">
+                <span>3,196,298</span>
+                <p>건</p>
+              </div>
+            </div>
+            <div class="section2">
+              <p>
+                한국과학기술정보연구원한국과학기술정보연구원(KISTI)은 과학기술
+                R&amp;D 인프라의 체계적 구축을 통 한 국가 경쟁력 확보를 위해
+                출범한 미래창조과학부 산하 정부출연연구기관입니다.주요기능
+                :한국과학기술 정보연구원(KISTI)은 국가 과학기술 정보 분야의
+                전문연구기관으로서 국가 과학기술 진흥과 산업의 발전에...
+              </p>
+            </div>
+          </div>
+          <div class="agency">
+            <div class="section1">
+              <div class="name">한국교육학술정보원</div>
+              <div class="count">
+                <span>*검색 API 별도 연계</span>
+              </div>
+            </div>
+            <div class="section2">
+              <p>
+                한국교육학술정보원 우리원은 1999년 4월,
+                한국교육학술정보원법(법률 제5,686호)에 의하여 설립된
+                정부출연기관으로 학교교육 ·평생학습·학술연구에 필요한 전문적인
+                정보를 종합적으로 제공함으로써, 우리나라 교육발전에...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tab">1</div>
+      </div>
+      <!-- 푸터 -->
+      <footer></footer>
     </div>
   </body>
 </html>

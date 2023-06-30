@@ -4,6 +4,215 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>K-library</title>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="wrap">
+      <!-- 헤더 -->
+      <div class="gnb_header">
+        <div class="menu">
+          <div class="logo"></div>
+          <ul class="gnb">
+            <li>메인 페이지</li>
+            <li>기관별보기</li>
+            <li>열린마당</li>
+          </ul>
+          <i class="xi-search"></i>
+        </div>
+        <div class="head">
+          <h1>열린마당</h1>
+        </div>
+      </div>
+      <!-- 내용 -->
+      <div class="container">
+        <div class="contents">
+          <div class="menu">
+            <div class="title">열린마당</div>
+            <p>묻고 답하기</p>
+          </div>
+          <div class="context">
+            <div class="title">묻고 답하기</div>
+            <div class="top5">
+              <p>자주하는 질문 TOP 5</p>
+              <ul>
+                <li class="active">주요메뉴 관련</li>
+                <li>자료검색 관련</li>
+                <li>자료이용 관련</li>
+                <li>회원정보 관련</li>
+                <li>기타</li>
+              </ul>
+            </div>
+            <div class="questions">
+              <div class="question">
+                <div class="Q"><img src="../images/question.png" alt="" /></div>
+                <p>‘기관별보기’가 무엇인가요?</p>
+                <i class="xi-angle-down"></i>
+              </div>
+              <div class="question">
+                <div class="Q"><img src="../images/question.png" alt="" /></div>
+                <p>‘유형별보기’가 무엇인가요?</p>
+                <i class="xi-angle-down"></i>
+              </div>
+              <div class="question">
+                <div class="Q"><img src="../images/question.png" alt="" /></div>
+                <p>‘컬렉션’이 뭔가요?</p>
+                <i class="xi-angle-down"></i>
+              </div>
+              <div class="question">
+                <div class="Q"><img src="../images/question.png" alt="" /></div>
+                <p>인기태그는 언제 갱신되나요?</p>
+                <i class="xi-angle-down"></i>
+              </div>
+              <div class="question">
+                <div class="Q"><img src="../images/question.png" alt="" /></div>
+                <p>서평은 누가 쓰는 건가요?</p>
+                <i class="xi-angle-down"></i>
+              </div>
+              <div class="question">
+                <div class="Q"><img src="../images/question.png" alt="" /></div>
+                <p>‘사용자목록’이 무엇인가요?</p>
+                <i class="xi-angle-down"></i>
+              </div>
+            </div>
+            <div class="guide">
+              <p>
+                묻고 답하기는 국가전자도서관에 대한 문의사항을게재하는 곳이며,
+                회원가입 후 글쓰기를 하실 수 있습니다. <br />
+                회원 여러분들의 의견에 성실하게 답변해 드리겠습니다.
+              </p>
+            </div>
+            <div class="search">
+              <div class="Qname">
+                <i class="xi-check-square"></i>
+                <p>글제목</p>
+              </div>
+              <div class="Qcontent">
+                <i class="xi-check-square"></i>
+                <p>내용</p>
+              </div>
+              <div class="searchbox">
+                <input type="text" placeholder="검색어를 입력해 주세요" />
+                <div class="s_btn">검색</div>
+              </div>
+            </div>
+            <div class="board">
+              <div class="w_btn">글쓰기</div>
+              <table class="list">
+                <tr>
+                  <th class="num">번호</th>
+                  <th class="title">제목</th>
+                  <th class="name">이름</th>
+                  <th class="date">등록일</th>
+                  <th class="viewcount">조회</th>
+                  <th class="content">첨부</th>
+                  <th class="answer">답변</th>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td>보는방법</td>
+                  <td>익명01</td>
+                  <td>2023-04-26</td>
+                  <td>63</td>
+                  <td></td>
+                  <td><i class="xi-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>검색목록 다운</td>
+                  <td>익명01</td>
+                  <td>2023-04-26</td>
+                  <td>63</td>
+                  <td></td>
+                  <td><i class="xi-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>별을 찾아 떠난 여행</td>
+                  <td>익명01</td>
+                  <td>2023-04-26</td>
+                  <td>63</td>
+                  <td></td>
+                  <td><i class="xi-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>어떻게 보는건가요?</td>
+                  <td>익명01</td>
+                  <td>2023-04-26</td>
+                  <td>63</td>
+                  <td></td>
+                  <td><i class="xi-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <td>23</td>
+                  <td>도대체 어떻게 보는거죠</td>
+                  <td>익명01</td>
+                  <td>2023-04-26</td>
+                  <td>63</td>
+                  <td></td>
+                  <td><i class="xi-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>전자책대출</td>
+                  <td>익명01</td>
+                  <td>2023-04-26</td>
+                  <td>63</td>
+                  <td></td>
+                  <td><i class="xi-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                  <td>논문 수정 요청</td>
+                  <td>익명01</td>
+                  <td>2023-04-26</td>
+                  <td>63</td>
+                  <td></td>
+                  <td><i class="xi-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>뷰어 설치</td>
+                  <td>익명01</td>
+                  <td>2023-04-26</td>
+                  <td>63</td>
+                  <td></td>
+                  <td><i class="xi-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>전자책대출</td>
+                  <td>익명01</td>
+                  <td>2023-04-26</td>
+                  <td>63</td>
+                  <td></td>
+                  <td><i class="xi-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>보는방법</td>
+                  <td>익명01</td>
+                  <td>2023-04-26</td>
+                  <td>63</td>
+                  <td></td>
+                  <td><i class="xi-check-circle"></i></td>
+                </tr>
+              </table>
+              <ul class="tab">
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 푸터 -->
+      <footer></footer>
+    </div>
+  </body>
 </html>

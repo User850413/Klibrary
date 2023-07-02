@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 body {
-  line-height: 1.5;
+  line-height: 1.2;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 14px;
 }
@@ -20,4 +20,31 @@ body {
   max-width: 1544px;
   margin: 0 auto;
   padding: 0 20px;
+}
+/* 푸터 */
+.footer {
+  background-color: #353535;
+  color: #90908a;
+  display: flex;
+  flex-direction: column;
+}
+.footer_container {
+  width: 1544px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer .section01 {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  padding: 18px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.footer .section01 .yellow {
+  color: #ffbb14;
+}
+.footer .section01 .box {
+  padding: 6px 10px;
+  border: 1px solid #90908a;
 }

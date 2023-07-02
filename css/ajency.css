@@ -1,0 +1,132 @@
+.gnb_header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.gnb_header .menu {
+  width: 100%;
+  position: relative;
+  background-color: #365010;
+}
+.gnb_header .menu .gnb {
+  display: flex;
+  justify-content: center;
+}
+.gnb_header .menu .gnb li {
+  padding: 30px 100px;
+  font-size: 18px;
+  color: #fff;
+}
+.gnb_header .menu .logo {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+  background-image: url("../images/logo_w.png");
+  width: 208px;
+  height: 44px;
+}
+.gnb_header .menu > i {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  color: #fff;
+  font-size: 31px;
+}
+.gnb_header .head {
+  color: #fff;
+  background-image: url("../images/agencyBG.jpg");
+  width: 100%;
+  height: 226px;
+  align-items: center;
+}
+.gnb_header .head .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 82px;
+}
+.gnb_header .head .texts h1 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 30px;
+}
+.gnb_header .head .texts p {
+  font-size: 15px;
+  text-align: center;
+}
+.date {
+  width: 100%;
+  height: 100px;
+  font-size: 18px;
+  position: relative;
+  border-bottom: 1px solid #666;
+}
+.date p {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.agencies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+.agencies .agency {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 15px;
+}
+.agencies .agency .section1 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px 30px;
+  border-bottom: 1px solid #c0c0c0;
+  gap: 10px;
+}
+.agencies .agency .section1 .name {
+  font-size: 30px;
+}
+.agencies .agency .section1 .count {
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+}
+.agencies .agency .section1 .count span {
+  font-size: 30px;
+  color: #2f5ea6;
+  font-weight: 600;
+}
+.agencies .agency .section2 {
+  padding: 35px 24px 0;
+  font-size: 15px;
+}
+.agencies .agency .section2 p {
+  height: 54px;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+.tab {
+  display: flex;
+  justify-content: center;
+  margin: 114px 0 100px;
+}
+.tab span {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #ccc;
+}
+.tab span.active::after {
+  position: absolute;
+  content: "";
+  background-color: #000;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+}

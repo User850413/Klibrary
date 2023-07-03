@@ -40,6 +40,7 @@ body {
   padding: 18px 0;
   font-size: 14px;
   font-weight: 600;
+  border-bottom: 1px solid #454545;
 }
 .footer .section01 .yellow {
   color: #ffbb14;
@@ -47,4 +48,41 @@ body {
 .footer .section01 .box {
   padding: 6px 10px;
   border: 1px solid #90908a;
+}
+.footer .section02 {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  color: #666;
+}
+.footer .section02 .Mlogo {
+  width: 168px;
+  height: 38px;
+}
+.footer .section02 .Mlogo img {
+  width: 100%;
+  height: 100%;
+}
+.footer .section02 .ps {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0 5px;
+}
+.footer .section02 .ps p {
+  position: relative;
+}
+.footer .section02 .ps p::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: -10px;
+  top: 0;
+  background-color: #666;
+}
+.footer .section02 .ps p:first-child:after {
+  height: 0;
+}
+.footer .section02 .copy {
+  margin-bottom: 26px;
 }

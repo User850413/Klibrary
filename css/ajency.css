@@ -13,9 +13,12 @@
   justify-content: center;
 }
 .gnb_header .menu .gnb li {
-  padding: 30px 100px;
   font-size: 18px;
   color: #fff;
+}
+.gnb_header .menu .gnb li a {
+  padding: 30px 100px;
+  display: block;
 }
 .gnb_header .menu .logo {
   position: absolute;
@@ -54,6 +57,25 @@
   font-size: 15px;
   text-align: center;
 }
+/* gnb hover */
+.gnb_header .gnb li a {
+  position: relative;
+}
+.gnb_header .gnb li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;
+  left: 50%;
+  bottom: 0;
+}
+.gnb_header .gnb li a:hover::after {
+  width: 100%;
+  bottom: 0;
+  transition: all 0.3s;
+  background-color: #fff;
+  left: 0;
+}
 .date {
   width: 100%;
   height: 100px;
@@ -77,14 +99,31 @@
   border: 1px solid #ddd;
   display: flex;
   flex-direction: column;
-  padding: 40px 15px;
+  cursor: pointer;
+}
+.agencies .agency:hover .section1 {
+  background-color: #292f43;
+  color: #fff;
+  transition: all 0.3s;
+}
+.agencies .agency:hover .section1 .S1Padding {
+  border-bottom: none;
+}
+.agencies .agency:hover .section1 .S1Padding span {
+  color: #fff;
 }
 .agencies .agency .section1 {
   display: flex;
   flex-direction: column;
-  padding: 0 24px 30px;
-  border-bottom: 1px solid #c0c0c0;
   gap: 10px;
+}
+.agencies .agency .section1 .S1Padding {
+  margin: 40px 15px 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #c0c0c0;
+}
+.agencies .agency .section1 .S1Padding > div {
+  padding: 0 14px;
 }
 .agencies .agency .section1 .name {
   font-size: 30px;
@@ -100,8 +139,12 @@
   font-weight: 600;
 }
 .agencies .agency .section2 {
-  padding: 35px 24px 0;
+  padding: 35px 34px 40px;
   font-size: 15px;
+}
+.agencies .agency:hover .section2 {
+  background-color: #eee;
+  transition: all 0.3s;
 }
 .agencies .agency .section2 p {
   height: 54px;
@@ -120,6 +163,7 @@
   text-align: center;
   line-height: 40px;
   border: 1px solid #ccc;
+  cursor: pointer;
 }
 .tab span.active::after {
   position: absolute;

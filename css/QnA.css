@@ -1,0 +1,346 @@
+.gnb_header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.gnb_header .menu {
+  width: 100%;
+  position: relative;
+  background-color: #601e22;
+}
+.gnb_header .menu .gnb {
+  display: flex;
+  justify-content: center;
+}
+.gnb_header .menu .gnb li {
+  font-size: 18px;
+  color: #fff;
+}
+.gnb_header .menu .gnb li a {
+  padding: 30px 100px;
+  display: block;
+}
+.gnb_header .menu .logo {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+  background-image: url("../images/logo_w.png");
+  width: 208px;
+  height: 44px;
+}
+.gnb_header .menu > i {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  color: #fff;
+  font-size: 31px;
+}
+.gnb_header .head {
+  color: #fff;
+  background-image: url("../images/QnABG.jpg");
+  width: 100%;
+  height: 226px;
+  align-items: center;
+}
+.gnb_header .head .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 82px;
+}
+.gnb_header .head .texts h1 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 30px;
+}
+.gnb_header .head .texts p {
+  font-size: 15px;
+  text-align: center;
+}
+/* gnb hover */
+.gnb_header .gnb li a {
+  position: relative;
+}
+.gnb_header .gnb li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;
+  left: 50%;
+  bottom: 0;
+}
+.gnb_header .gnb li a:hover::after {
+  width: 100%;
+  bottom: 0;
+  transition: all 0.3s;
+  background-color: #fff;
+  left: 0;
+}
+.contents {
+  display: flex;
+  gap: 40px;
+  margin-top: 80px;
+  margin-bottom: 56px;
+}
+.contents .menu {
+  width: 271px;
+  padding: 30px 20px;
+  background-color: #f8f8f8;
+}
+.contents .menu .title {
+  width: 100%;
+  font-size: 24px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #636363;
+}
+.contents .menu span {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.contents .menu span.active {
+  color: #a81220;
+}
+.contents .context {
+  flex: 1;
+}
+.contents .context > .title {
+  width: 100%;
+  height: 74px;
+  position: relative;
+  border-bottom: 1px solid #636363;
+}
+.contents .context .title p {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  font-size: 26px;
+}
+.contents .top5 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+.contents .top5 p {
+  display: block;
+  font-size: 18px;
+}
+.contents .top5 ul {
+  display: flex;
+}
+.contents .top5 ul li.active {
+  border: 1px solid #8c2b34;
+}
+.contents .top5 ul li {
+  height: 68px;
+  line-height: 68px;
+  font-size: 16px;
+  flex: 1;
+  text-align: center;
+  border: 1px solid #e2e2e2;
+  cursor: pointer;
+}
+.contents .questions {
+  margin-top: 40px;
+  display: none;
+  border-top: 1px solid #636363;
+}
+.contents .questions .question {
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  padding: 20px 30px;
+  border-bottom: 1px solid #d6d6d6;
+}
+.contents .questions .question .Q {
+  height: 31px;
+}
+.contents .questions .question p {
+  margin: 0 auto 0 41px;
+}
+.contents .questions .question i {
+  font-size: 18px;
+}
+.contents .questions .answer {
+  display: none;
+  padding: 20px 30px;
+  border-bottom: 1px solid #d6d6d6;
+}
+.contents .questions .answer .Aflex {
+  align-items: center;
+  display: flex;
+  gap: 41px;
+}
+.contents .questions .answer .A {
+  height: 31px;
+}
+.contents .questions .answer p {
+  color: #707070;
+}
+.contents .guide {
+  display: flex;
+  align-items: center;
+  padding: 33px 40px;
+  gap: 35px;
+  margin: 20px 0 40px;
+  border: 1px solid #d9d9d9;
+}
+.contents .guide .guideImg {
+  width: 51px;
+  height: 43px;
+  background-image: url("../images/faqGuide.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.contents .guide img {
+  width: 100%;
+  height: 100%;
+}
+.contents .guide p {
+  color: #808280;
+}
+.contents .search {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 83px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.contents .search .Qname i,
+.contents .search .Qcontent i {
+  color: #616161;
+  font-size: 17px;
+}
+.contents .search .Qname,
+.contents .search .Qcontent {
+  cursor: pointer;
+  display: flex;
+  font-size: 15px;
+  gap: 10px;
+}
+.contents .search .Qcontent {
+  margin: 0 36px 0 20px;
+}
+.contents .search .searchbox {
+  display: flex;
+  gap: 4px;
+}
+.contents .search .searchbox input {
+  font-size: 14px;
+  width: 540px;
+  height: 44px;
+  border: 1px solid #cecece;
+  padding: 0 15px;
+}
+.contents .search .searchbox .s_btn {
+  cursor: pointer;
+  width: 76px;
+  height: 44px;
+  background-color: #484848;
+  color: #fff;
+  text-align: center;
+  line-height: 44px;
+}
+.contents .board {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contents .board .w_btn {
+  margin-left: auto;
+  width: 154px;
+  height: 43px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #484848;
+  text-align: center;
+  line-height: 43px;
+  cursor: pointer;
+}
+.board .list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #636363;
+  font-size: 15px;
+}
+.board .list .tablehead {
+  background-color: #f3f3f3;
+}
+
+.board .list > li > ul {
+  display: flex;
+}
+.board .list > li > ul:hover {
+  background-color: #f7f3d5;
+}
+.board .list .tablehead ul:hover {
+  background-color: inherit;
+}
+.board .list > li > ul > li {
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  border-bottom: 1px solid #e7e7e7;
+  cursor: pointer;
+}
+.board .list .tablehead ul li {
+  cursor: inherit;
+}
+.board .list .num,
+.board .list .viewcount,
+.board .list .attach,
+.board .list .reply {
+  width: 73px;
+}
+.board .list .title,
+.board .list .date {
+  width: 188px;
+}
+.board .list .name {
+  flex: 1;
+}
+.board .list .title {
+  text-align: left;
+}
+.board .list .tablehead .title {
+  text-align: center;
+}
+.board .list .reply {
+  color: #929292;
+  font-size: 18px;
+}
+.board .list .tablehead .reply {
+  color: #000;
+  font-size: 15px;
+}
+.tab {
+  display: flex;
+  justify-content: center;
+  margin: 114px 0 157px;
+}
+.tab span {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.tab span.active::after {
+  position: absolute;
+  content: "";
+  background-color: #000;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+}

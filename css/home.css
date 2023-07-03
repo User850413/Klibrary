@@ -98,6 +98,24 @@
   color: #fff;
   font-size: 20px;
 }
+.hero .menu li a {
+  position: relative;
+}
+.hero .menu li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;
+  left: 50%;
+  bottom: 0;
+}
+.hero .menu li a:hover::after {
+  width: 100%;
+  bottom: 0;
+  transition: all 0.3s;
+  background-color: #fff;
+  left: 0;
+}
 .hero .BG {
   width: 100%;
   height: 390px;
@@ -229,6 +247,9 @@
 .trendingTag .tags .Top10 .Tranking li p {
   font-size: 16px;
 }
+.trendingTag .tags .Top10 .Tranking li p:hover {
+  text-decoration: underline;
+}
 .trendingTag .tags .Tlist {
   flex: 1;
   background-color: #ebebeb;
@@ -263,12 +284,15 @@
   border: 1px solid #d3d2d2;
   display: flex;
 }
+.bookReview .reviewBox .review .bookP {
+  padding: 36px 20px 0;
+  flex: 1;
+}
 .bookReview .reviewBox .review {
   display: flex;
   flex-direction: column;
-  padding: 36px 20px;
-  flex: 1;
 }
+
 .bookReview .reviewBox .review .book {
   height: 148px;
   font-size: 14px;
@@ -290,8 +314,9 @@
 }
 .bookReview .reviewBox .review .Breview {
   height: 200px;
-  margin-top: 40px;
+  margin: 40px 0 36px;
   font-size: 15px;
+  padding: 0 20px;
 }
 .bookReview .reviewBox .review .Breview .like {
   display: flex;
@@ -314,13 +339,23 @@
 .bookReview .reviewBox .review .Breview .library {
   margin: 10px 0 20px;
 }
-.bookReview .reviewBox .review .Breview > p {
+.bookReview .reviewBox .review .Breview .desc {
   height: 85px;
   width: 100%;
-  text-overflow: ellipsis;
+  text-overflow: hidden;
   font-size: 14px;
   overflow: hidden;
   display: block;
+}
+.bookReview .reviewBox .review:hover .bookP {
+  background-color: #9c2033;
+  color: #fff;
+}
+.bookReview .reviewBox .review:hover .bookP .book {
+  border-bottom: none;
+}
+.bookReview .reviewBox .review:hover .reviewP {
+  background-color: #ddd;
 }
 .Ucollection {
   margin-bottom: 100px;

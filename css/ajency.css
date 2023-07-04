@@ -5,8 +5,8 @@
 }
 .gnb_header .menu {
   width: 100%;
-  position: relative;
   background-color: #365010;
+  position: fixed;
 }
 .gnb_header .menu .gnb {
   display: flex;
@@ -36,6 +36,7 @@
   font-size: 31px;
 }
 .gnb_header .head {
+  margin-top: 81px;
   color: #fff;
   background-image: url("../images/agencyBG.jpg");
   width: 100%;
@@ -148,8 +149,13 @@
 }
 .agencies .agency .section2 p {
   height: 54px;
-  width: 100%;
+  overflow: hidden;
+  white-space: normal;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
 }
 .tab {
   display: flex;
